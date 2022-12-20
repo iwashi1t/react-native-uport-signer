@@ -47,7 +47,14 @@ configurations.all {
 dependencies {
     implementation 'com.facebook.react:react-native:+'
 
-    api "com.github.uport-project:uport-android-signer:0.3.2"
+    implementation ("com.github.uport-project:uport-android-signer:0.4.0") {
+//        exclude group: 'com.github.komputing.kethereum', module: 'extensions'
+    }
+//    implementation "com.github.uport-project.kotlin-common:core:0.4.3"
+//    implementation "com.github.komputing.khex:extensions:1.0.0-RC6"
+    implementation "com.github.komputing.kethereum:bip32:0.81.4"
+    implementation "com.github.komputing.kethereum:bip39:0.81.4"
+    implementation "com.github.komputing.kethereum:bip39_wordlist_en:0.81.4"
 
     testImplementation "junit:junit:4.12"
 }

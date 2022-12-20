@@ -279,8 +279,8 @@ class RNUportHDSignerModule(reactContext: ReactApplicationContext)
                 return@signJwtBundle promise.reject(err)
             }
             val map = WritableNativeMap()
-            val rec: Int = if (sigData.v > 1) {
-                (sigData.v + 1) % 2
+            val rec: Int = if (sigData.v.toInt() > 1) {
+                (sigData.v.toInt() + 1) % 2
             } else {
                 sigData.v.toInt()
             }
