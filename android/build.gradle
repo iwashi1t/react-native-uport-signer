@@ -47,7 +47,7 @@ configurations.all {
 dependencies {
     implementation 'com.facebook.react:react-native:+'
 
-    api "com.github.uport-project:uport-android-signer:0.3.2"
+    api "com.github.iwashi1t:uport-android-signer:api-31-SNAPSHOT"
 
     testImplementation "junit:junit:4.12"
 }
